@@ -3,10 +3,16 @@ $color-primary: #e3ab2e;
 $color-primary-light: #ffffc7;
 $color-primary-dark: #ebc36a;
 
+$color-secondary-light:#7ed56f;
+$color-secondary-dark: #28b485;
+
+$color-tertiary-light:#2998ff;
+$color-tertiary-dark: #5643fa;
+
 $color-grey-light-1: #f7f7f7;
 
 $color-grey-dark: #777;
-$color-white: #fff;
+$color-white: #ffff;
 $color-black: #000;
 
 //font 
@@ -16,3 +22,6 @@ $default-font-size: 16px;
 $grid-width: 1140px;
 $gutter-vertical: 80px;
 $gutter-horizontal: 60px;
+
+//Box shadow
+$shadow: $color-black;

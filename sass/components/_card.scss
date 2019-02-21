@@ -1,21 +1,21 @@
 .card {
+
+    //FUNCTIONALITY
     perspective: 1500px;
     -moz-perspective: 1500px;
     position: relative;
     height: 500px;
 
     &__side {
-        color: #fff;
-        font-size: 20px;
-
         height: 500px;
         transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        backface-visibility: hidden;
-        border-radius: 3px;
+        backface-visibility: hidden; 
+        border-radius: $default-border-radius;
+        overflow: hidden;
         box-shadow: 0 15px 40px rgba($shadow, .15);
 
         &--front {
@@ -23,13 +23,22 @@
         }
 
         &--back {
-            transform: rotateY(180deg);
+            transform: rotateY(-180deg);
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary); 
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark); 
+            }
         }
     }
+
 
     &:hover &__side--front {
         transform: rotateY(180deg);
@@ -37,5 +46,78 @@
 
     &:hover &__side--back {
         transform: rotateY(0deg);
+    }
+
+
+    //FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 480px;
+        background-blend-mode: soft-light;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: $default-border-radius;
+        border-top-right-radius: $default-border-radius;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
+            url(../img/lotussugar.jpg);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary), 
+            url(../img/Magic-hands.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
+            url(../img/tranos.jpg);
+        }
+    }
+
+    &__heading {
+        font-size: 28px;
+        font-weight: 300;
+        text-align: right;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 400px;
+        right: 20px;
+        width: 75%;
+    }
+
+    &__heading-span {
+        padding: 10px 15px;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+             rgba($color-secondary-light, .85), 
+             rgba($color-secondary-dark, .85));
+        }
+        
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+             rgba($color-primary-light, .85), 
+             rgba($color-primary, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+             rgba($color-tertiary-light, .85), 
+             rgba($color-tertiary-dark, .85));
+        }
+    }
+
+    //BACK SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
     }
 }

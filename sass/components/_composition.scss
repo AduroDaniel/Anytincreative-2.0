@@ -3,16 +3,16 @@
     
     &__photo {
         width: 55%;
-        box-shadow: 0 15px 40px rgba($color-black, .4);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 2px;
         position: absolute;
         z-index: 10;
         transition: all .2s;
-        outline-offset: 20px;
+        outline-offset: 2rem;
 
         &--p1 {
             left: 0;
-            top: -30px;
+            top: -3rem;
         }
 
         &--p2 {
@@ -26,9 +26,9 @@
         }
 
         &:hover {
-            outline: 15px solid $color-primary;
+            outline: 1.5rem solid $color-primary;
             transform: scale(1.05) translateY(5px);
-            box-shadow: 0 25px 40px rgba($color-black, .5);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
 

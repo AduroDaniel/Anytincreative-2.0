@@ -1,29 +1,29 @@
 .story {
     width: 75%;
     margin: 0 auto;
-    box-shadow: 0 30px 60px rgba($color-black, .1);
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
     background-color: rgba($color-white, .6);
     border-radius: $default-border-radius;
-    padding: 60px;
-    padding-left: 90px;
+    padding: 6rem;
+    padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
     &__shape {
-        width: 150px;
-        height: 150px;
+        width: 15rem;
+        height: 15rem;
         float: left;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-        transform: translateX(-30px) skewX(12deg);
+        transform: translateX(-3rem) skewX(12deg);
         position: relative;
     }
 
     &__image {
         height: 100%;
-        transform: translateX(-40px) scale(1.4);
+        transform: translateX(-4rem) scale(1.4);
         transition: all .5s;
     }
 

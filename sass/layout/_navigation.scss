@@ -6,25 +6,25 @@
 
     &__button{
         background-color: $color-white;
-        height: 70px;
-        width: 70px;
+        height: 7rem;
+        width: 7rem;
         position: fixed;
-        top: 60px;
-        right: 60px;
+        top: 6rem;
+        right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 10px 30px rgba($color-black, .1);
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
         text-align: center;
         cursor: pointer;
     }
 
     &__background {
-        height: 60px;
-        width: 60px;
+        height: 6rem;
+        width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 65px;
-        right: 65px;
+        top: 6.5rem;
+        right: 6.5rem;
         background-image: radial-gradient($color-primary-light, $color-primary);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -64,7 +64,7 @@
             display: inline-block;
             font-size: 30px;
             font-weight: 300;
-            padding: 10px 20px;
+            padding: 1rem 2rem;
             color: $color-white;
             text-decoration: none;
             text-transform: uppercase;
@@ -73,7 +73,7 @@
             transition: all .4s;
 
             span {
-                margin-right: 15px;
+                margin-right: 1.5rem;
                 display: inline-block;
             }
         }
@@ -99,7 +99,7 @@
     //ICONS
     &__icon {
         position: relative;
-        margin-top: 35px;
+        margin-top: 3.5rem;
 
         &,
         &::before,

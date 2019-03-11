@@ -29,7 +29,7 @@
     &:focus {
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba($color-black,.4);
+        box-shadow: 0 5px 1rem rgba($color-black,.4);
     }
 
     &-white {
@@ -99,7 +99,7 @@
     }
 
     &:active {
-        box-shadow: 0 5px 10px rgba($color-black,.15);
+        box-shadow: 0 5px 1rem rgba($color-black,.15);
         transform: translateY(-2px);
     }
 }

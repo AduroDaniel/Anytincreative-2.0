@@ -1,6 +1,6 @@
 .footer {
     background-color: $color-Cgreen;
-    padding: 100px 0;
+    padding: 10rem 0;
     font-size: 14px;
     color: $color-grey-light-1;
 
@@ -10,14 +10,14 @@
     }
 
     &__logo {
-        width: 150px;
+        width: 15rem;
         height: auto;
-        margin-bottom: 80px;
+        margin-bottom: 8rem;
     }
 
     &__navigation {
         border-top: 1px solid $color-grey-dark;
-        padding-top: 20px;
+        padding-top: 2rem;
         display: inline-block;
     }
 
@@ -29,7 +29,7 @@
         display: inline-block;
 
         &:not(:last-child) {
-            margin-right: 15px;
+            margin-right: 1.5rem;
         }
     }
 
@@ -46,7 +46,7 @@
             &:hover,
             &:active {
                 color: $color-primary;
-                box-shadow: 0 10px 20px rgba($color-black, .4);
+                box-shadow: 0 1rem 2rem rgba($color-black, .4);
                 transform: rotate(5deg) scale(1.3);
             }
         }
@@ -54,7 +54,7 @@
 
     &__copyright {
         border-top: 1px solid $color-grey-dark;
-        padding-top: 20px;
+        padding-top: 2rem;
         width: 80%;
         float: right;
     }

@@ -1,13 +1,13 @@
 .form {
     &__group:not(last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
 
     &__input {
         font-size: 15px;
         font-family: inherit;
         color: inherit;
-        padding: 15px 20px;
+        padding: 1.5rem 2rem;
         border-radius: 2px;
         background-color: rgba($color-white, .5);
         border: none;
@@ -18,7 +18,7 @@
 
         &:focus {
             outline: none;
-            box-shadow: 0 10px 20px rgba($color-black, .1);
+            box-shadow: 0 1rem 2rem rgba($color-black, .1);
             border-bottom: 3px solid $color-secondary-dark;
         }
 
@@ -34,7 +34,7 @@
     &__label {
         font-size: 12px;
         font-weight: 700;
-        margin-left: 20px;
+        margin-left: 2rem;
         margin-top: 7px;
         display: block;
         transition: all .3s;
@@ -44,6 +44,6 @@
     &__input:placeholder-shown + &__label {
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-40px);
+        transform: translateY(-4rem);
     }
 }

@@ -14,6 +14,8 @@
 }
 
 
+//ORDER: Base + Typograhy > general layouts + grid > page layout > components
+
 //MEDIA QUERY MANAGER
 /* 
 0 - 600px: Phone
@@ -21,13 +23,7 @@
 900px - 1200px: Tablet landscape
 1200px - 1800px: this is where the normal style apllys
 1800px + : Big desktop
-*/
 
-@mixin respond-phone {
-    @media (max-width: 600px) { @content };
-}
-
-/*
 $breakpoint arguement choices:
 - phone
 - tab-port
@@ -40,12 +36,15 @@ $breakpoint arguement choices:
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };  //600px
     }
+
     @if $breakpoint == tab-port {
-        @media (max-width: 56.25em) { @content };  //900px
+        @media (max-width: 56.25em) { @content };  //900px 
     }
+
     @if $breakpoint == tab-land {
         @media (max-width: 75em) { @content };  //1200px
     }
+
     @if $breakpoint == big-desktop {
         @media (min-width: 112.5em) { @content };   //1800px
     }

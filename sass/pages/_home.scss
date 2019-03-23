@@ -72,16 +72,17 @@
         background-image: linear-gradient(105deg, 
                                     rgba($color-white, .9) 0%,
                                     rgba($color-white, .9) 65%,
-                                        transparent 65%) ,
+                                        transparent 65%),
                                     url(../img/ANC-6.jpeg);
         background-size: cover;
     }
 
     @include respond(tab-port) {
-        background-image: linear-gradient(to right, 
-                                    rgba($color-white, .9) 0%,
-                                    rgba($color-white, .9) 100%,
-                                    url(../img/ANC-6.jpeg);
+        background-image: linear-gradient(to right,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 100%,
+            transparent 65%), 
+            url(../img/ANC-6.jpeg);
         background-size: cover;
     }
 

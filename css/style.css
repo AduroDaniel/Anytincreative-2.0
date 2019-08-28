@@ -110,7 +110,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ffffc7, #F9CA06);
+  background-image: linear-gradient(to right, #F9CA06, #F18701);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;

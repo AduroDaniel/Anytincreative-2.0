@@ -31,6 +31,13 @@ document.addEventListener('DOMContentLoaded', getQuestion);
 // Next Button Click
 nextBtn.addEventListener('click', validate);
 
+// Input Field enter click
+inputField.addEventListener('keyup', e => {
+    if (e.keyCode == 13) {
+        validate();
+    }
+})
+
 
 // FUNCTIONS
 
@@ -98,5 +105,38 @@ function inputFail() {
 
 // Field Input Passed
 function inputPass() {
-    
+    formBox.className = '';
+    setTimeout(transform, shakeTime * 0, 0, 10);
+    setTimeout(transform, shakeTime * 1, 0, 0);
+
+    // Store Answer in Array
+    questions[position].answer = inputField.value;
+
+    // Increment Position
+    position++;
+
+    // If new Question, hide current and Get next
+    if (questions[position]) {
+        hideQuestion();
+        getQuestion();
+    } else {
+        // Remove if no more question
+        hideQuestion();
+        formBox.className = 'close';
+        progress.style.width = '100%';
+
+        // Form complete
+        formComplete();
+    }
+}
+
+// All fields complete - show h1 end
+function formComplete() {
+    const h1 = document.createElement('h1');
+    h1.classList.add('end');
+    h1.appendChild(document.createTextNode(`Thanks ${questions[0].answer} You are registered and will get an email shortly`));
+    setTimeout(() => {
+        formBox.parentElement.appendChild(h1);
+        setTimeout(() => (h1.style.opacity = 1), 50);
+    }, 1000);
 }

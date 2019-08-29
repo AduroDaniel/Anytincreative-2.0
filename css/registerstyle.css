@@ -15,46 +15,12 @@ h1.end {
   opacity: 0;
   transition: 0.8s ease-in-out; }
 
-#home-button {
+.home__logo-box {
   position: absolute;
-  transform: translate(-50%, -50%); }
-
-button {
-  font-size: 30px;
-  text-transform: uppercase;
-  width: 140px;
-  height: 60px;
-  border-radius: 80px;
-  line-height: 60px;
-  text-align: center;
-  border: 3px solid #009688;
-  display: block;
-  text-decoration: none;
-  color: #28b485;
-  position: absolute;
-  overflow: hidden;
-  background: transparent;
-  transition: .3s; }
-  button::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #009688;
-    top: 100%;
-    left: 0;
-    z-index: -1;
-    transition: .3s; }
-  button::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #009688;
-    top: 100%;
-    left: 0;
-    z-index: -1;
-    transition: .3s; }
+  top: 30px;
+  left: 30px; }
+  .home__logo-box__logo {
+    height: 35px; }
 
 #container {
   height: 100vh;

@@ -40,18 +40,20 @@ h1.end {
 }
 
 button{
-    font-size: 4opx;
+    font-family: 'lato' sans-serif;
+    font-size: 30px;
     text-transform: uppercase;
     width: 140px;
     height: 60px;
     border-radius: 80px;
-    line-height: 60px;
     text-align: center;
     border: 3px solid #009688;
     display: block;
     text-decoration: none;
-    color: $color-secondary-dark;
-    
+    color: #009688;
+    position: absolute;
+    overflow: hidden;
+    background: transparent;
 }
 
 #container {

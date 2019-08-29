@@ -20,19 +20,17 @@ h1.end {
   transform: translate(-50%, -50%); }
 
 button {
-  position: absolute;
-  background: #ccc;
-  border: 1px solid #28b485;
-  font-size: 18px;
-  border-radius: 4px;
-  overflow: hidden; }
-  button:focus {
-    display: block;
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 60px;
-    height: 100%; }
+  font-size: 4opx;
+  text-transform: uppercase;
+  width: 140px;
+  height: 60px;
+  border-radius: 80px;
+  line-height: 60px;
+  text-align: center;
+  border: 3px solid #009688;
+  display: block;
+  text-decoration: none;
+  color: #28b485; }
 
 #container {
   height: 100vh;

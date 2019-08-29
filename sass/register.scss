@@ -34,6 +34,12 @@ h1.end {
     transition: 0.8s ease-in-out;
 }
 
+#home-button{
+    position: absolute;
+    background: #9e9e9e;
+    
+}
+
 #container {
     height: 100vh;
     display: flex;

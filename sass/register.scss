@@ -10,6 +10,8 @@ $color-secondary-dark: #28b485;
 $color-tertiary-light:#2998ff;
 $color-tertiary-dark: #5643fa;
 
+$color-Cgreen: #2E282A;
+
 $light: #9e9e9e;
 $error: #ff2d26;
 $progress-height: 10px;
@@ -34,7 +36,7 @@ h1.end {
     transition: 0.8s ease-in-out;
 }
 
-.header {
+#home {
     background-position: top;
     position: relative;
 }
@@ -45,8 +47,8 @@ h1.end {
     left: 30px;
 }
 
-.home__logo {
-    height: 35px;
+#home__logo {
+    height: 30px;
 }
 
 #container {
@@ -182,5 +184,91 @@ h1.end {
 @media(max-width: 600px) {
     #form-box {
         width: 80%;
+    }
+}
+
+
+//Footer
+#footer {
+    background-color: $color-Cgreen;
+    padding: 10rem 0;
+    font-size: 14px;
+    color: $color-grey-light-1;
+
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+        margin-bottom: 8rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__navigation {
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        display: inline-block;
+
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-light-1;
+            background-color: $color-Cgreen;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+
+            &:hover,
+            &:active {
+                color: $color-primary;
+                box-shadow: 0 1rem 2rem rgba($color-black, .4);
+                transform: rotate(5deg) scale(1.3);
+            }
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        width: 80%;
+        float: right;
+
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+        }
     }
 }

@@ -3,7 +3,8 @@ const questions = [
     { question: 'Enter Your First Name' },
     { question: 'Enter Your Last Name' },
     { question: 'Enter Your Email', pattern: /\S+@\S+\.\S+/ },
-    { question: 'Enter Your Phone' }
+    { question: 'Enter Your Phone', type:'num' },
+    { question: 'Enter Your Location' }
 ];
 
 //Transition Times
@@ -90,6 +91,8 @@ function validate() {
     } else {
         inputPass();
     }
+
+
 }
 
 // Field Input Fail

@@ -235,6 +235,7 @@ body {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading h1 {
@@ -245,12 +246,42 @@ body {
 .heading p {
     color: #fff;
     font-size: 12px;
+    margin-bottom: 20px;
 }
 
 // Form
 .form {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin: 20px 0;
+    background: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 1px solid $color-primary;
+}
+
+#msg {
+    margin-top: 60px;
+}
+
+input::-webkit-input-placeholder {
+    color: #EAEAEA;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+button {
+    padding: 20px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 200px;
+    margin-top: 30px;
+    background-color: $color-primary;
+    color: $color-white;
 }

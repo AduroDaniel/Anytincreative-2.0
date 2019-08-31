@@ -53,6 +53,19 @@
             <button type="button">Talk to Us</button>
         </div>
 
+        <h1>My Google Map</h1>
+        <div id="map"></div>
+        <script>
+            function initMap(){
+                var options = {
+                    zoom:8,
+                    center:{lat:7.7827,lng:-4.5418}
+                }
 
+                var map = new google.maps.Map(document.getElementById('map'), options);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByla77vfsBbgj0xcnijyTNAQ30O31XO54&callback=initMap"
+        async defer></script>    
     </body>
 </html>

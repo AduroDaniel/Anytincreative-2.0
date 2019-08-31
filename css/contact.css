@@ -198,3 +198,7 @@ button {
   margin-top: 30px;
   background-color: #F9CA06;
   color: #fff; }
+
+#map {
+  height: 400px;
+  width: 100%; }

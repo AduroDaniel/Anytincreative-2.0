@@ -134,3 +134,18 @@
 
 .header__logo {
   height: 35px; }
+
+.heading {
+  margin: 100px 0 200px 120px; }
+
+.heading p {
+  width: 60%;
+  margin-top: 10px; }
+
+.work {
+  text-align: center;
+  width: 100%; }
+
+.work img {
+  margin: 1%;
+  width: 45%; }

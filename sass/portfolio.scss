@@ -25,6 +25,41 @@ $color-white: #fff;
 $color-black: #000;
 $color-Cgreen: #2E282A;
 
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	vertical-align: baseline;
+	font-size: 100%;	
+}
+
+html {
+	font-family: Poppins;
+}
+
+body {
+	width: 100%;
+	background: #0E0E0E;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	color: #fff;
+	font-size: 48px;
+}
+
+p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+}
+
 //Navigation
 .navigation {
     
@@ -196,7 +231,7 @@ $color-Cgreen: #2E282A;
 //Header
 
 .header__logo-box {
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 30px;
 }
@@ -216,6 +251,10 @@ $color-Cgreen: #2E282A;
 	margin-top: 10px;
 }
 
+.heading2 {
+	margin: 100 0 200px 120px;
+}
+
 //Work
 .work {
 	text-align: center;
@@ -225,4 +264,40 @@ $color-Cgreen: #2E282A;
 .work img {
 	margin: 1%;
 	width: 45%;
+}
+
+.work2 {
+	width: 100%;
+	text-align: center;
+}
+
+.work2 img {
+	margin: 1%;
+	width: 45%;
+}
+
+// Footer
+
+.footer {
+    background-color: $color-Cgreen;
+    padding: 10rem 0;
+    font-size: 14px;
+    color: $color-grey-light-1;
+}
+
+.footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.footer__logo {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 8rem;
+}
+
+.footer__navigation {
+        border-top: 1px solid $color-grey-dark;
+        padding-top: 2rem;
+        display: inline-block;
 }

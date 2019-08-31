@@ -91,8 +91,6 @@ function validate() {
     } else {
         inputPass();
     }
-
-
 }
 
 // Field Input Fail

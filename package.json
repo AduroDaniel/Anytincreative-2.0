@@ -6,7 +6,8 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass sass/register.scss css/registerstyle.css -w",
-    "compile:sass": "node-sass sass/portfolio.scss css/portfoliostyle.css -w"
+    "compile:sass": "node-sass sass/portfolio.scss css/portfoliostyle.css -w",
+    "compile:sass": "node-sass sass/contact.scss css/contact.css -w"
   },
   "author": "Daniel Aduro",
   "license": "ISC",

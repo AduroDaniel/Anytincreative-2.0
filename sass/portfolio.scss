@@ -25,6 +25,12 @@ $color-white: #fff;
 $color-black: #000;
 $color-Cgreen: #2E282A;
 
+//grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
 
 * {
 	margin: 0;
@@ -274,34 +280,4 @@ p {
 .work2 img {
 	margin: 1%;
 	width: 45%;
-}
-
-// Footer
-
-.footer {
-    background-color: $color-Cgreen;
-    padding: 10rem 0;
-    font-size: 14px;
-    color: $color-grey-light-1;
-}
-
-.footer__logo-box {
-    text-align: center;
-    margin-bottom: 8rem;
-}
-
-.footer__logo {
-    width: 15rem;
-    height: auto;
-    margin-bottom: 8rem;
-}
-
-.footer__navigation {
-    border-top: 1px solid $color-grey-dark;
-    padding-top: 20px;
-    display: inline-block;
-}
-
-.footer__list {
-    list-style: none;
 }

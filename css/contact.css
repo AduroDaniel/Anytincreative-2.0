@@ -1,3 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 62.5%; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/ANC-7.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px; }
+
 .navigation__checkbox {
   display: none; }
 
@@ -132,3 +150,18 @@
 
 .header__logo {
   height: 35px; }
+
+.heading {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading h1 {
+  color: #fff;
+  font-size: 46px; }
+
+.heading p {
+  color: #fff;
+  font-size: 12px; }

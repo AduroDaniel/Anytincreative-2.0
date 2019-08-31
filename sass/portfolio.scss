@@ -297,7 +297,11 @@ p {
 }
 
 .footer__navigation {
-        border-top: 1px solid $color-grey-dark;
-        padding-top: 2rem;
-        display: inline-block;
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.footer__list {
+    list-style: none;
 }

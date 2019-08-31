@@ -203,3 +203,11 @@ p {
   width: 15rem;
   height: auto;
   margin-bottom: 8rem; }
+
+.footer__navigation {
+  border-top: 1px solid #777;
+  padding-top: 20px;
+  display: inline-block; }
+
+.footer__list {
+  list-style: none; }

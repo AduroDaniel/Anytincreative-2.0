@@ -176,6 +176,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+  @media (max-width: 900px) {
+    .form {
+      width: 100%; } }
+  @media (max-width: 600px) {
+    .form {
+      width: 100%; } }
 
 input {
   width: 100%;
@@ -192,6 +198,9 @@ input {
   border-radius: 2px;
   border-bottom: 3px solid transparent;
   transition: all .3s; }
+  @media (max-width: 900px) {
+    input {
+      width: 80%; } }
 
 /*#msg {
     height: 80px;
@@ -216,6 +225,9 @@ textarea {
   border-bottom: 3px solid transparent;
   transition: all .3s;
   letter-spacing: 2px; }
+  @media (max-width: 900px) {
+    textarea {
+      width: 80%; } }
 
 button {
   padding: 20px 32px;
@@ -240,3 +252,12 @@ button {
 .maps {
   top: 75%;
   padding-top: 650px; }
+
+@media only screen and (max-width: 991px) {
+  .heading {
+    text-align: left; }
+  .heading h1 {
+    font-size: 36px; }
+  .heading p {
+    font-size: 12px;
+    width: 90%; } }

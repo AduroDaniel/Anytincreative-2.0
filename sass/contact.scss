@@ -262,6 +262,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
 }
 
 input {
@@ -279,6 +287,10 @@ input {
     border-radius: 2px;
     border-bottom: 3px solid transparent;
     transition: all .3s;
+
+    @media (max-width: 900px) {
+        width: 80%;
+    }
 }
 
 /*#msg {
@@ -306,6 +318,10 @@ textarea {
    border-bottom: 3px solid transparent;
    transition: all .3s;
    letter-spacing: 2px;
+
+   @media (max-width: 900px) {
+       width: 80%;
+   }
 }
 
 button {
@@ -337,4 +353,20 @@ button {
 .maps {
     top: 75%;
     padding-top: 650px;
+}
+
+// Media queries
+@media only screen and (max-width: 991px) {
+    .heading {
+		text-align: left;
+	}
+
+	.heading h1 {
+		font-size: 36px;
+	}
+
+	.heading p {
+		font-size: 12px;
+		width: 90%;
+	}
 }

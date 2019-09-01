@@ -250,7 +250,7 @@ body {
 .heading p {
     color: #fff;
     font-size: 12px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 // Form
@@ -325,6 +325,7 @@ textarea {
 }
 
 button {
+    text-decoration: none;
     padding: 20px 32px;
     text-transform: uppercase;
     text-align: center;
@@ -333,6 +334,7 @@ button {
     display: inline-block;
     border-radius: 200px;
     margin-top: 30px;
+    margin-bottom: 20px;
     background-color: $color-primary;
     color: $color-white;
     transition: all .2s;
@@ -346,6 +348,19 @@ button {
                 transform: scaleX(1.2) scaleY(1.4);
                 opacity: 0;
             }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 20rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
     }
 }
 

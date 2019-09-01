@@ -293,9 +293,9 @@ input {
     }
 }
 
-/*#msg {
-    height: 80px;
-}*/
+#tel {
+    width: 50%;
+}
 
 input::-webkit-input-placeholder {
     color: $color-grey-dark-2;

@@ -197,7 +197,14 @@ button {
   border-radius: 200px;
   margin-top: 30px;
   background-color: #F9CA06;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+    button:hover::after {
+      transform: scaleX(1.2) scaleY(1.4);
+      opacity: 0; }
 
 #map {
   height: 400px;

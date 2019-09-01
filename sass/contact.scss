@@ -41,8 +41,8 @@ body {
 	height: 100vh;
     background-image: linear-gradient(
         to right bottom,
-         rgba($color-primary-light, 0.8),
-         rgba($color-primary, 0.8)),
+         rgba($color-primary, 0.8),
+         rgba($color-primary-light, 0.8)),
         url(../img/banner2.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
@@ -249,8 +249,9 @@ body {
 
 .heading p {
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 80px;
+    font-weight: 500;
 }
 
 // Form
@@ -265,10 +266,12 @@ body {
 
     @media (max-width: 900px) {
         width: 100%;
+        margin-top: 80px;
     }
 
     @media (max-width: 600px) {
         width: 100%;
+        margin-top: 80px;
     }
 }
 
@@ -371,7 +374,7 @@ button {
 }
 
 // Media queries
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 900px) {
     .heading {
 		text-align: left;
 	}
@@ -382,6 +385,6 @@ button {
 
 	.heading p {
 		font-size: 12px;
-		width: 90%;
-	}
+        width: 90%;
+    }
 }

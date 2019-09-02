@@ -7,7 +7,7 @@
 
 		$to='adurodaniel@gmail.com';
 		$subject='Form Submission';
-		$message="Name: ".$name."\n".$phone."\n". "Wrote the following: "."\n\n".$msg;
+		$message="Name: ".$name."\n".$phone."\n". "Wrote the following: "."\n\n".$message;
 		$headers="From: "$email;
 
 		if(mail($to, $subject, $message, $header)){

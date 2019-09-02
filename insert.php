@@ -11,6 +11,11 @@
 		echo 'Database Not Selected';
 	}
 
-	
+	$Name = $_POST['name'];
+	$Email = $_POST['email'];
+	$Fileupload = $_POST['fileupload'];
+	$Phone = $_POST['phone'];
+
+	$sql = "INSERT INTO Applicants (Name,Email,Fileupload,Phone) "
 
 ?>

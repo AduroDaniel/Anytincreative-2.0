@@ -8,7 +8,7 @@
     "compile:sass": "node-sass sass/registerstyle.scss css/registerstyle.css -w",
     "compile:sass": "node-sass sass/portfolio.scss css/portfoliostyle.css -w",
     "compile:sass": "node-sass sass/contact.scss css/contact.css -w",
-    "compile:sass": "node-sass sass/register.scss css/register.css"
+    "compile:sass": "node-sass sass/register.scss css/register.css -w"
   },
   "author": "Daniel Aduro",
   "license": "ISC",

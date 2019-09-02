@@ -16,7 +16,7 @@
 	$Fileupload = $_POST['fileupload'];
 	$Phone = $_POST['phone'];
 
-	$sql = "INSERT INTO Applicants (full name,email,image_path,phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
+	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
 
 	if(!mysqli_query($con,$sql))
 	{

@@ -7,7 +7,7 @@
 		echo 'Not Connected To Server';
 	}
 
-	if (!mysqli_select_db($con, 'anytincr_wes')) {
+	if(!mysqli_select_db($con, 'anytincr_wes')) {
 		echo 'Database Not Selected';
 	}
 
@@ -16,6 +16,14 @@
 	$Fileupload = $_POST['fileupload'];
 	$Phone = $_POST['phone'];
 
-	$sql = "INSERT INTO Applicants (Name,Email,Fileupload,Phone) "
+	$sql = "INSERT INTO Applicants (full name,email,image_path,phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
+
+	if(!mysqli_query($con,$sql))
+	{
+		echo 'Not Inserted';
+	}
+	else {
+		echo 'Inserted';
+	}
 
 ?>

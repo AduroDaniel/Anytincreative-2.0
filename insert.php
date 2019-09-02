@@ -13,7 +13,7 @@
 
 	$Name = $_POST['name'];
 	$Email = $_POST['email'];
-	$Fileupload = $_FILES['fileupload'];
+	$Image_path = 'image/' .$_FILES['fileupload'];
 	$Phone = $_POST['phone'];
 
 	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";

@@ -35,7 +35,7 @@
 	else {
 		echo 'Submitted';
 	}
-
+	
 	header("refresh:2; url=index.html");
 
 ?>

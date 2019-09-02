@@ -3,7 +3,7 @@
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$phone=$_POST['phone'];
-		$msg=$_POST['message'];
+		$msg=$_POST['msg'];
 
 		$to='adurodaniel@gmail.com';
 		$subject='Form Submission';
@@ -16,5 +16,6 @@
 		else{
 			echo "Something went wrong!";
 		}
-	}
+	}	
+
 ?>

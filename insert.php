@@ -26,4 +26,6 @@
 		echo 'Inserted';
 	}
 
+	header("refresh:2; url=prodesignmasterclass.html");
+
 ?>

@@ -12,6 +12,7 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-    "paystack": "^2.0.1"
+    "paystack": "^2.0.1",
+    "paystack-api": "^2.0.1"
   }
 }

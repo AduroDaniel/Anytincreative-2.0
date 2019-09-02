@@ -18,12 +18,19 @@
 
 	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
 
+	if(preg_match("!image!", $_FILES['fileupload']['type'])){
+
+	}
+	else{
+		$_SESSION['message']="Please upload only JPG or PNG!";
+	}
+
 	if(!mysqli_query($con,$sql))
 	{
-		echo 'Not Inserted';
+		echo 'Not Submitted';
 	}
 	else {
-		echo 'Inserted';
+		echo 'Submitted';
 	}
 
 	header("refresh:2; url=index.html");

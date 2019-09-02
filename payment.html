@@ -48,10 +48,10 @@
         <div class=payment_paystack></div>
 
             <form id="paystack-card-form">
-                <input type="text" data-paystack="number">
-                <input type="text" data-paystack="cvv">            
-                <input type="text" data-paystack="expiryMonth">
-                <input type="text"  data-paystack="expiryYear">
+                <input type="number" data-paystack="number">
+                <input type="number" maxlength="3" data-paystack="cvv">            
+                <input type="number" maxlength="2" data-paystack="expiryMonth">
+                <input type="number" maxlength="2"  data-paystack="expiryYear">
                 <button type="submit" data-paystack="submit">Submit</button>
             </form>
         </div>

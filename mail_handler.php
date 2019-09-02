@@ -3,11 +3,11 @@
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$phone=$_POST['phone'];
-		$message=$_POST['message'];
+		$msg=$_POST['message'];
 
 		$to='adurodaniel@gmail.com';
 		$subject='Form Submission';
-		$message="Name: ".$name."\n".$phone."\n". "Wrote the following: "."\n\n".$message;
+		$message="Name: ".$name."\n".$phone."\n". "Wrote the following: "."\n\n".$msg;
 		$headers="From: "$email;
 
 		if(mail($to, $subject, $message, $header)){

@@ -1,20 +1,16 @@
 <?php
-	if(isset($_POST['submit'])){
-		$name=$_POST['name'];
-		$email=$_POST['email'];
-		$phone=$_POST['phone'];
-		$fileupload=$_POST['fileupload'];
 
-		$to='adurodaniel@gmail.com';
-		$subject='Form Submission';
-		$message="Name: ".$name."\n".$phone."\n". "Wrote the following: "."\n\n".$msg;
-		$headers="From: "$email;
+	$con = mysqli_connect('127.0.0.1', 'anytincr_aduro', '53DfBvb*C@Q!1Vbz#Sx', 'anytincr_wes', '3306');
 
-		if(mail($to, $subject, $message, $header)){
-			echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>;
-		}
-		else{
-			echo "Something went wrong!";
-		}
+	if(!$con)
+	{
+		echo 'Not Connected To Server';
 	}
+
+	if (!mysqli_select_db($con, 'anytincr_wes')) {
+		echo 'Database Not Selected';
+	}
+
+	
+
 ?>

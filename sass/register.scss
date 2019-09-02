@@ -244,25 +244,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-// Heading
-.heading {
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.heading h1 {
-    color: #fff;
-    font-size: 46px;
-}
-
-// Form
-.form {
 
     @media (max-width: 900px) {
         width: 100%;
@@ -275,10 +256,31 @@ body {
     }
 }
 
+// Heading
+.heading {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading h1 {
+    color: #fff;
+    font-size: 46px;
+}
+
+// Form
+.form {
+    position: relative;
+    margin: 0;
+    top: 40%;
+}
+
 input {
     width: 100%;
     font-family: inherit;
-    margin: 20px 0;
+    margin: 0;
     background-color: rgba($color-white, .5);
     color: $color-grey-dark-2;
     font-weight: 700;
@@ -287,13 +289,20 @@ input {
     border: none;
     padding: 15px 20px;
     display: block;
-    border-radius: 2px;
+    border-radius: 80px;
     border-bottom: 3px solid transparent;
     transition: all .3s;
 
     @media (max-width: 900px) {
         width: 80%;
     }
+}
+
+#fileupload {
+    position: relative;
+    width: 40%;
+    border-radius: 80px;
+    color: $color-black
 }
 
 #tel {
@@ -338,8 +347,23 @@ button {
 
 //Footer
 .footer p {
-    position: absolute;
 	text-align: center;
 	color: grey;
-	margin: auto
+    margin: auto;
+}
+
+// Media queries
+@media only screen and (max-width: 900px) {
+    .heading {
+		text-align: left;
+	}
+
+	.heading h1 {
+		font-size: 36px;
+	}
+
+	.heading p {
+		font-size: 12px;
+        width: 90%;
+    }
 }

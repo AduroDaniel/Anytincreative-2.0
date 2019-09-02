@@ -13,7 +13,7 @@
 
 	$Name = $_POST['name'];
 	$Email = $_POST['email'];
-	$Fileupload = $_POST['fileupload'];
+	$Fileupload = $_FILES['fileupload'];
 	$Phone = $_POST['phone'];
 
 	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
@@ -26,6 +26,6 @@
 		echo 'Inserted';
 	}
 
-	header("refresh:2; url=prodesignmasterclass.html");
+	header("refresh:2; url=index.html");
 
 ?>

@@ -13,17 +13,20 @@
 
 	$Name = $_POST['name'];
 	$Email = $_POST['email'];
-	$Image_path = 'image/' .$_FILES['fileupload'];
+	$Fileupload = 'image/' .$_FILES['fileupload'];
 	$Phone = $_POST['phone'];
 
-	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
-
 	if(preg_match("!image!", $_FILES['fileupload']['type'])){
-
+		
+		if(copy($_FILES['fileupload']['tmp_name'],$image_path)){
+	
+		}
 	}
 	else{
-		$_SESSION['message']="Please upload only JPG or PNG!";
+		echo 'Please upload only JPG or PNG!';
 	}
+
+	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
 
 	if(!mysqli_query($con,$sql))
 	{

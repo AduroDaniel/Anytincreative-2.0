@@ -236,7 +236,14 @@ body {
 
 .wrapper {
 	width: 90%;
-	margin: 0 auto;
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 // Heading
@@ -256,13 +263,6 @@ body {
 
 // Form
 .form {
-    width: 500px;
-    margin-top: 50px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 
     @media (max-width: 900px) {
         width: 100%;
@@ -308,6 +308,8 @@ input::-webkit-input-placeholder {
 
 //Button
 button {
+    top: 50%;
+    left: 60%;
     text-decoration: none;
     padding: 20px 32px;
     text-transform: uppercase;
@@ -336,7 +338,8 @@ button {
 
 //Footer
 .footer p {
+    position: absolute;
 	text-align: center;
 	color: grey;
-	margin: 60px auto;
+	margin: auto
 }

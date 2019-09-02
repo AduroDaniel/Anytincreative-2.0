@@ -3,7 +3,7 @@
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$phone=$_POST['phone'];
-		$msg=$_POST['message'];
+		$message=$_POST['message'];
 
 		$to='adurodaniel@gmail.com';
 		$subject='Form Submission';

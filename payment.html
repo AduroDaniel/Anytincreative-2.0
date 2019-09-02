@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="ANYTINCREATIVE is a full-time creative consult, rendering creative services ( Corporate identity, Design, Quality Printing and Product Photography) to client in order to promote brands and businesses home and abroad.">
+            <meta name="viewport" content="width=device-width, intial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+            <link rel="stylesheet" href="css/icofont.min.css">
+            <link rel="stylesheet" href="css/icon-font-software.css">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="shortcut icon" type="image/png" href="img/anytin creative logo copy.png">
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+            
+                <title> AnytinCreative | </title>
+    </head>
+    <body>
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> AnytinCreative</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Services</a></li>
+                    <li class="navigation__item"><a href="portfolio.html" class="navigation__link"><span>03</span>Portfolio</a></li>
+                    <li class="navigation__item"><a href="contact.html" class="navigation__link"><span>04</span>Contact</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Work with us</a></li>
+                    <li class="navigation__item"><a href="prodesignmasterclass.html" class="navigation__link"><span>06</span>Pro-Design Mastercalss</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <a href="index.html"><img src="img/anytin creative.png" alt="Logo" class="header__logo"></a>
+            </div>
+        </header>
+
+        <div class=payment_paystack></div>
+
+            <form id="paystack-card-form">
+                <input type="text" data-paystack="number">
+                <input type="text" data-paystack="cvv">            
+                <input type="text" data-paystack="expiryMonth">
+                <input type="text"  data-paystack="expiryYear">
+                <button type="submit" data-paystack="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <img src="img/anytin creative.png" alt="Full Logo" class="footer__logo">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="footer__navigation">
+                            <ul class="footer__list">
+                                <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                                <li class="footer__item"><a href="contact.html" class="footer__link">Contact us</a></li>
+                                <li class="footer__item"><a href="#" class="footer__link">Services</a></li>
+                                <li class="footer__item"><a href="portfolio.html" class="footer__link">Portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <p class="footer__copyright">
+                            Built by <a href="#" class="footer__link">Daniel Aduro</a> <!--with the aid of Jonas Schmedtmann tutorial--> for AnytinCreative. Copyright &copy;AnytinCreative
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="https://js.paystack.co/v1/paystack.js"></script>
+        <script src="js/payment.js"></script>
+
+    </body>
+</html>

@@ -1,29 +1,20 @@
 <?php
-$servername = "localhost";
-$username = "anytincr_aduro";
-$password = "53DfBvb*C@Q!1Vbz#Sx";
-$dbname = "anytincr_wes";
+	if(isset($_POST['submit'])){
+		$name=$_POST['name'];
+		$email=$_POST['email'];
+		$phone=$_POST['phone'];
+		$fileupload=$_POST['fileupload'];
 
-$conn = new mysqli($servername, $username, $password, $dbname); // Create connection
-if ($conn->connect_error) {     // Check connection
-    die("Connection failed: " . $conn->connect_error);
-} 
+		$to='adurodaniel@gmail.com';
+		$subject='Form Submission';
+		$message="Name: ".$name."\n".$phone."\n". "Wrote the following: "."\n\n".$msg;
+		$headers="From: "$email;
 
-$firstname = mysqli_real_escape_string($conn, $_POST['name']);
-$lastname = mysqli_real_escape_string($conn, $_POST['name']);
-$email = mysqli_real_escape_string($conn, $_POST['amount']);
-$phone = mysqli_real_escape_string($conn, $_POST['times']);
-
-if (strlen($times) > 200000) {  $times = "";    }
-
-$sql = "INSERT INTO usertimes (name,date,amount,times)
-VALUES ('$name', CURDATE(), '$amount', '$times') ON DUPLICATE KEY UPDATE    
-date=CURDATE(), amount='$amount', times='$times'";
-
-if ($conn->query($sql) === TRUE) {
-    echo "Page saved!";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-$conn->close();
+		if(mail($to, $subject, $message, $header)){
+			echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>;
+		}
+		else{
+			echo "Something went wrong!";
+		}
+	}
 ?>

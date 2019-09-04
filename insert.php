@@ -1,7 +1,8 @@
 <?php
 
 	$flag = TRUE;
-	$out = '';
+	$out = 'Not Submitted';
+	$outlay = 'Submitted';
 
 	$con = mysqli_connect('127.0.0.1', 'anytincr_aduro', '53DfBvb*C@Q!1Vbz#Sx', 'anytincr_wes', '3306');
 
@@ -53,10 +54,10 @@
 
 	if(!mysqli_query($con,$sql))
 	{
-		$out = 'Not Submitted';
+		print $out;
 	}
 	else {
-		$out = 'Submitted';
+		print $outlay;
 	}
 	
 	header("Location: https://paystack.com/pay/pro-design-masterclass");

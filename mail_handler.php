@@ -8,13 +8,13 @@
 		$to='adurodaniel@gmail.com';
 		$subject='Form Submission';
 		$message="Name: ".$name."\n".$phone."\n". "Wrote the following: "."\n\n".$msg;
-		$headers="From: "$email;
+		$headers='From: '$email';
 
 		if(mail($to, $subject, $message, $header)){
-			echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>;
+			echo '<h1>Sent Successfully! Thank you .'.$name.'. We will contact you shortly!</h1>';
 		}
 		else{
-			echo "Something went wrong!";
+			echo 'Something went wrong!';
 		}
 	}	
 

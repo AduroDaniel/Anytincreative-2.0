@@ -58,6 +58,6 @@
 		echo 'Submitted';
 	}
 	
-	header("refresh: 3; url = anytincreative.com");
+	header("Loca");
 
 ?>

@@ -51,14 +51,6 @@ body {
     display: table;
     font-family: "Quicksand", sans-serif;
     font-size: 16px;
-
-    @media (max-width: 900px) {
-        width: 80%;
-    }
-
-    @media (max-width: 600px) {
-        width: 80%;
-    }
 }
 
 
@@ -237,7 +229,8 @@ body {
     top: 30px;
     left: 30px;
 
-           @media (max-width: 900px) {
+        @media (max-width: 900px) {
+            position: relative;
             top: 4rem;
             right: 4rem;
         }
@@ -316,8 +309,7 @@ input {
     }
 
     @media (max-width: 600px) {
-        width: 100%;
-        margin: 0;
+        width: 80%;
     }
 }
 

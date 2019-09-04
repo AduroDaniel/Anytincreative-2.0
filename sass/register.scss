@@ -236,6 +236,16 @@ body {
     position: fixed;
     top: 30px;
     left: 30px;
+
+           @media (max-width: 900px) {
+            top: 4rem;
+            right: 4rem;
+        }
+
+        @media (max-width: 600px) {
+            top: 3rem;
+            right: 3rem;
+        }
 }
 
 .header__logo {
@@ -368,11 +378,18 @@ button {
 // Media queries
 @media only screen and (max-width: 900px) {
     .heading {
-		text-align: left;
+        text-align: left;
+        @media (max-width: 900px) {
+            width: 80%;
+        }
+
+        @media (max-width: 600px) {
+            width: 80%;
+        }
 	}
 
 	.heading h1 {
-		font-size: 36px;
+		font-size: 24px;
 	}
 
 	.heading p {

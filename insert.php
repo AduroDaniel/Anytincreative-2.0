@@ -56,11 +56,11 @@
 	}
 	else {
 		echo 'Submitted';
-	};
+	}
 	
 	if(!mysqli_query($con,$sql)) {
-		header("Location: https://paystack.com/pay/pro-design-masterclass");
-		exit();
+        echo "<script> location.href='https://paystack.com/pay/pro-design-masterclass'; </script>";
+        exit;
 	}
 
 

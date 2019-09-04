@@ -15,6 +15,12 @@ body {
   display: table;
   font-family: "Quicksand", sans-serif;
   font-size: 16px; }
+  @media (max-width: 900px) {
+    body {
+      width: 80%; } }
+  @media (max-width: 600px) {
+    body {
+      width: 80%; } }
 
 .navigation__checkbox {
   display: none; }
@@ -204,6 +210,10 @@ input {
   @media (max-width: 900px) {
     input {
       width: 80%; } }
+  @media (max-width: 600px) {
+    input {
+      width: 100%;
+      margin: 0; } }
 
 #fileupload {
   position: relative;

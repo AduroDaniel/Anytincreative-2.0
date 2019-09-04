@@ -56,12 +56,17 @@
 	}
 	else {
 		echo 'Submitted';
-	}
-	
-	if(!mysqli_query($con,$sql)) {
-        echo "<script> location.href='https://paystack.com/pay/pro-design-masterclass'; </script>";
-        exit;
+		
 	}
 
+	if(isset($_POST['mySubmit'])) {
+		// the form was submitted
+	
+		// ...
+		// perform your logic
+	
+		// redirect if login was successful
+		header('Location: https://paystack.com/pay/pro-design-masterclass');
+	}
 
 ?>

@@ -1,5 +1,7 @@
 <?php
 
+	$flag = TRUE;
+
 	$con = mysqli_connect('127.0.0.1', 'anytincr_aduro', '53DfBvb*C@Q!1Vbz#Sx', 'anytincr_wes', '3306');
 
 	if(!$con)
@@ -28,6 +30,7 @@
 
 	if($_FILES['fileupload']["size"] > 5000000) {
 		echo 'Sorry, your file is too large.<br>';
+		$flag = FALSE;
 	}
 	else {
 		echo 'File size Ok<br>';
@@ -41,6 +44,7 @@
 		echo 'File is an image';
 	}
 	else {
+		$flag = FALSE;
 		echo 'File not an image';
 	}
 
@@ -54,6 +58,6 @@
 		echo 'Submitted';
 	}
 	
-	header("refresh:2; url=index.html");
+	header("refresh: 2; url = index.html");
 
 ?>

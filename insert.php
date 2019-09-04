@@ -58,6 +58,7 @@
 		echo 'Submitted';
 	}
 	
-	header("Loca");
+	header("Location: https://paystack.com/pay/pro-design-masterclass");
+	exit();
 
 ?>

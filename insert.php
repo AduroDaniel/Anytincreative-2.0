@@ -33,7 +33,7 @@
 		$flag = FALSE;
 	}
 	else {
-		echo 'File size Ok<br>';
+		echo 'File size Ok <br>';
 	}
 
 	// DO NOT TRUST $_FILES['upfile']['mime'] value
@@ -55,18 +55,19 @@
 		echo 'Not Submitted';
 	}
 	else {
-		echo 'Submitted';
+		echo 'Successful';
 		
 	}
 
-	if(isset($_POST['mySubmit'])) {
-		// the form was submitted
-	
-		// ...
-		// perform your logic
-	
-		// redirect if login was successful
-		header('Location: https://paystack.com/pay/pro-design-masterclass');
-	}
+	$result=mysql_query($sql);
+
+    mysql_close();
+
+    // if successfully insert data into database, displays message "Successful and redirect to a URL ". 
+    if($result)
+
+    {
+            header('Location: https://paystack.com/pay/pro-design-masterclass/');
+    }
 
 ?>

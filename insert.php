@@ -2,8 +2,6 @@
 
 	$flag = TRUE;
 
-	if (isset($_POST['submit'])) {
-
 	$con = mysqli_connect('127.0.0.1', 'anytincr_aduro', '53DfBvb*C@Q!1Vbz#Sx', 'anytincr_wes', '3306');
 
 	if(!$con)
@@ -52,17 +50,17 @@
 
 	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
 
-	$result=mysql_query($sql) or die(mysql_error());
-
-    mysql_close();
-
-    // if successfully insert data into database, displays message "Successful and redirect to a URL ". 
-    if($result)
+	if (sql) {
+		echo 'Application Submitted';
+	}
+	else {
+		echo 'Not submitted';
+	}
 
     {
 			header("Location: https://paystack.com/pay/pro-design-masterclass/");
 			exit();
 	}
-}
+
 
 ?>

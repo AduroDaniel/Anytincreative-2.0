@@ -1,7 +1,5 @@
 <?php
 
-	$flag = TRUE;
-
 	$con = mysqli_connect('127.0.0.1', 'anytincr_aduro', '53DfBvb*C@Q!1Vbz#Sx', 'anytincr_wes', '3306');
 
 	if(!$con)
@@ -30,7 +28,6 @@
 
 	if($_FILES['fileupload']["size"] > 5000000) {
 		echo 'Sorry, your file is too large.<br>';
-		$flag = FALSE;
 	}
 	else {
 		echo 'File size Ok <br>';
@@ -50,17 +47,16 @@
 
 	$sql = "INSERT INTO Applicants (name, email, image_path, phone) VALUES ('$Name', '$Email', '$Fileupload', '$Phone')";
 
-	if (sql) {
-		echo 'Application Submitted';
+	if (!mysqli_query($con,$sql)) 
+	{
+		echo 'Not Submitted';
 	}
 	else {
-		echo 'Not submitted';
+		echo 'Application Submitted';
 	}
 
-    {
-			header("Location: https://paystack.com/pay/pro-design-masterclass/");
-			exit();
-	}
+	header("Location: https://paystack.com/pay/pro-design-masterclass/");
+	exit();
 
 
 ?>

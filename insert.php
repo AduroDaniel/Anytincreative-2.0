@@ -1,5 +1,7 @@
 <?php
 
+	$flag = "Application Submitted";
+
 	$con = mysqli_connect('127.0.0.1', 'anytincr_aduro', '53DfBvb*C@Q!1Vbz#Sx', 'anytincr_wes', '3306');
 
 	if(!$con)
@@ -52,10 +54,16 @@
 		echo 'Not Submitted';
 	}
 	else {
-		echo 'Application Submitted';
+		echo $flag;
 	}
 
-	header("Location: https://paystack.com/pay/pro-design-masterclass/");
+	if(!mysqli_query($con,$sql))  {
+		if($flag) {
+			header('Location: https://paystack.com/pay/pro-design-masterclass/');
+		}
+	}
+
+	//header("Location: https://paystack.com/pay/pro-design-masterclass/");
 	exit();
 
 

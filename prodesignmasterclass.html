@@ -52,7 +52,7 @@
                 <input type="file" name="fileupload" value="fileupload" id="fileupload">
                 <input type="tel" maxlength="13" placeholder="Phone Number" name="phone" id="tel" required>
 
-                <button type="submit" value="Insert" name="submit" onclick="send_me">Register</button>
+                <button type="submit" value="Insert" name="submit" onclick="send_me ()">Register</button>
             </form>
             
 
@@ -61,14 +61,13 @@
             </div>
         </div>
 
-        <script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
             function send_me () {
-            window.location.replace("https://paystack.com/pay/pro-design-masterclass");
-        }
+            $.ajax({url:"https://paystack.com/pay/pro-design-masterclass"});
+            }
         </script>
 
 
     </body>
 
 </html>
-        

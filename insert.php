@@ -32,7 +32,7 @@
 		echo 'Sorry, your file is too large.<br>';
 	}
 	else {
-		echo 'File size Ok <br>';
+		//echo 'File size Ok <br>';
 	}
 
 	// DO NOT TRUST $_FILES['upfile']['mime'] value
@@ -40,7 +40,7 @@
 	//You can check for particular types - see documentation
 	//Files smaller than 11 Bytes generate a particular error
 	if((exif_imagetype($_FILES['fileupload']['tmp_name']))) {
-		echo 'File is an image';
+		//echo 'File is an image';
 	}
 	else {
 		$flag = FALSE;
@@ -54,14 +54,13 @@
 		echo 'Not Submitted';
 	}
 	else {
-		echo $flag;
+
+			header('Location: https://paystack.com/pay/pro-design-masterclass/');
 	}
 
-	if(!mysqli_query($con,$sql))  {
-		if($flag) {
-			header('Location: https://paystack.com/pay/pro-design-masterclass/');
-		}
-	}
+	/*if(!mysqli_query($con,$sql))  {
+
+	}*/
 
 	//header("Location: https://paystack.com/pay/pro-design-masterclass/");
 	exit();

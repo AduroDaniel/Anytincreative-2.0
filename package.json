@@ -9,7 +9,7 @@
   "author": "Daniel Aduro",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "paystack": "^2.0.1",
